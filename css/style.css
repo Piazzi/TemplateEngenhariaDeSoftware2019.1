@@ -1,0 +1,255 @@
+.logo {
+    float: left;
+    width: 10%;
+    height: 10%;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.tituloSlide {
+    color: #ffffff;
+}
+
+body {
+    background-color: #fff;
+}
+
+.carousel-inner .item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+
+}
+
+.thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: #b11016;
+    border: 0;
+    clear: both;
+}
+
+#navbar-links {
+    float: right;
+    margin-top: 2.5%;
+}
+
+#navbar-links a {
+    padding: 0 10px;
+}
+
+#navbar-links button {
+    color: #b11016;
+    font-size: 125%;
+    text-decoration: none;
+}
+
+.navbar-btn {
+    background-color: #fff;
+}
+
+.navbar-toggle {
+    background-color: #fff;
+}
+
+.slide {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    clear: both;
+}
+
+.highlights-title {
+    text-align: center;
+    background-color: #b11016;
+    padding: 2.5%;
+    color: #fff;
+}
+
+.highlights .thumbnail {
+    text-align: center;
+    margin-top: 10%;
+    background-color: #b11016;
+}
+
+.highlights .thumbnail h3, .highlights .thumbnail p {
+    color: #fff;
+}
+
+.highlights .thumbnail img {
+    margin: 0;
+}
+
+.highlights .row {
+    margin: 0 3%;
+}
+
+.highlights .row a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #b11016;
+    font-size: 15px;
+    border-top: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    border-bottom: 5px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+footer .row {
+    color: #fff;
+}
+
+footer .row a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer img {
+    width: 10%;
+    height: 10%;
+}
+
+footer h2 {
+    font-size: 25px;
+    font-style: "Times New Roman";
+}
+
+.places .container {
+    margin-top: 20px;
+}
+
+.places .dropdown {
+    margin-bottom: 10px;
+}
+
+.places h3 {
+    text-align: center;
+}
+
+.places .thumbnail {
+    text-align: center;
+    margin-top: 10%;
+    background-color: #b11016;
+    min-height: 335px;
+}
+
+.places .thumbnail p {
+    color: #fff;
+}
+
+.places .search {
+    background-color: #b11016;
+    color: #fff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.buscaVazia {
+    text-align: center;
+    font-size: 20px;
+}
+
+.places .search button {
+    margin-top: 9%;
+    background-color: #fff;
+    width: 100%;
+    color: #b11016;
+}
+
+.about-us .container, .about-us .container-fluid {
+    margin-top: 20px;
+}
+
+.about-us .title, .about-us .info {
+    text-align: center;
+}
+
+.about-us .row {
+    margin: 5% 0;
+}
+
+.about-us .row .thumbnail p {
+    min-height: 220px;
+}
+
+.about-us .thumbnail {
+    color: #fff;
+    background-color: #b11016;
+}
+
+.about-us h2 {
+    color: #fff;
+}
+
+iframe {
+    position: relative;
+    width: 100%;
+}
+
+iframe > * {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.location h1 {
+    color: #fff;
+}
+
+.location iframe {
+    margin: 2.5% 0;
+}
+
+.imovel .thumbnail {
+    background-color: #fff;
+    border: 0;
+}
+
+.imovel .container .thumbnail {
+    border: 0;
+    background-color: #b11016;
+}
+
+.imovel .row {
+    background-color: #b11016;
+}
+
+.imovel .thumbnail h3, .imovel .thumbnail p {
+    color: #fff;
+}
+
+.imovel .row {
+    margin: 3% 2%;
+    padding: 2% 0;
+}
+
+#page-wrapper {
+    margin: 5%;
+}
+
+.login {
+    margin-top: 2.5%;
+    margin-bottom: 10%;
+}
