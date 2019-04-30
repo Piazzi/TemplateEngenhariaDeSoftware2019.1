@@ -4,7 +4,7 @@
  * @param $connect
  * @return array
  */
-function listaUsuarios($connect) {
+function listarUsuarios($connect) {
 	$usuarios = array();
 	$result = mysqli_query($connect, "select id, nome, email, categoria, created_at, updated_at from usuarios order by nome asc");
 	while($usuario = mysqli_fetch_assoc($result)) {
@@ -14,13 +14,13 @@ function listaUsuarios($connect) {
 }
 
 /**
- * @param $conexao
+ * @param $connect
  * @param $id
  * @return bool|mysqli_result
  */
-function excluirUsuario($conexao, $id) {
+function excluirUsuario($connect, $id) {
 	$query = "delete from usuarios where id = {$id}";
-	return mysqli_query($conexao, $query);
+	return mysqli_query($connect, $query);
 }
 
 /**
@@ -28,7 +28,7 @@ function excluirUsuario($conexao, $id) {
  * @param $id
  * @return array|null
  */
-function buscaUsuarioPeloId($connect, $id){
+function buscarUsuarioPeloId($connect, $id){
 	$result = mysqli_query($connect, "select * from usuarios where id = '{$id}'");
 	return mysqli_fetch_assoc($result);
 }
@@ -57,7 +57,7 @@ function alterarUsuario($connect, $id, $nome, $email, $categoria, $createdAt, $u
  * @param $categoria
  * @return bool|mysqli_result
  */
-function cadastraUsuario($connect, $nome, $email, $senha,  $categoria) {
+function cadastrarUsuario($connect, $nome, $email, $senha,  $categoria) {
 	$senhaMd5 = md5($senha);
 	$query = "insert into usuarios (nome, email, senha, categoria) values ('{$nome}','{$email}', '{$senhaMd5}','{$categoria}')";
 	$result = mysqli_query($connect, $query);
@@ -70,7 +70,7 @@ function cadastraUsuario($connect, $nome, $email, $senha,  $categoria) {
  * @param $senha
  * @return array|null
  */
-function buscaUsuario($connect, $email, $senha) {
+function buscarUsuario($connect, $email, $senha) {
 	$senhaMd5 = md5($senha);
 	$result = mysqli_query($connect, "select * from usuarios where email = '{$email}' and senha = '{$senhaMd5}'");
     $usuario = mysqli_fetch_assoc($result);
@@ -82,7 +82,7 @@ function buscaUsuario($connect, $email, $senha) {
  * @param $email
  * @return array|null
  */
-function buscaLogin($connect, $email) {
+function verificaEmail($connect, $email) {
     $result = mysqli_query($connect, "select * from usuarios where email = '{$email}'");
     $usuario = mysqli_fetch_assoc($result);
     return $usuario;

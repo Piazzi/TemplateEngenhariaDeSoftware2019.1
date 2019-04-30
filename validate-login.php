@@ -1,8 +1,7 @@
 <?php include("./connect.php");
 include("./functions.php");
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$usuario = buscaUsuario($connect, $email, $senha);
+
+$usuario = buscarUsuario($connect, $_POST['email'], $_POST['senha']);
 
 if($usuario['categoria'] == 'cliente' )
 {

@@ -28,7 +28,7 @@
                                 <a href="login.php"><button type="button" class="btn btn-default navbar-btn">Login <i class="fa fa-user"></i></button></a>
                             </li>
                             <li>
-                                <a href="registrar-cliente.php"><button type="button" class="btn btn-default navbar-btn">Registrar <i class="fa fa-plus-circle"></i></button></a>
+                                <a href="register.php"><button type="button" class="btn btn-default navbar-btn">Registrar <i class="fa fa-plus-circle"></i></button></a>
                             </li>
 						</ul>
 					</div>
